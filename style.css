@@ -59,11 +59,12 @@ h2 {
 .highlight {
   font-family: utopia-std-display, serif;
   font-weight: 700;
-  color:#60378f;
   color: #60378f;
   text-decoration: underline;
-  text-decoration-color: currentcolor;
+  -webkit-text-decoration: underline;
+  /*text-decoration-color: currentcolor;*/
   text-decoration-color: #cdaf6e;
+  -webkit-text-decoration-color: #cdaf6e;
   font-size:1.15em;
 }
 .welcome {
@@ -140,7 +141,42 @@ h2 {
 }
 
 /* RESPONSIVENESS */
-@media only screen and (min-width: 320px) and (max-width: 768px){
+@media only screen and (max-width: 399px){
+  body {
+      padding: 15px 20px 35px 20px;
+  }
+  nav {
+    margin-top:25px;
+    float:none;
+    text-align: center;
+  }
+  ul {
+    padding-left:0px;
+  }
+  .welcome {
+    font-size: 20px;
+  }
+  .footer {
+    margin-top:75px;
+  }
+  .logo {
+    width: 175px;
+    height: 75px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .image-caption {
+    float:none;
+  }
+  .pic_change {
+    float:none;
+    text-align:center;
+    margin-top:15px;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 768px){
   body {
       padding: 15px 20px 35px 20px;
   }
@@ -151,7 +187,7 @@ h2 {
     font-size: 20px;
   }
   .footer {
-    margin-top:75px;
+    margin-top:35px;
   }
 }
 
