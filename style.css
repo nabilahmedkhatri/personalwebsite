@@ -1,0 +1,162 @@
+body {
+  margin: 0px;
+  padding: 30px 35px 35px 35px;
+  background-color: #f9f9f9;
+}
+
+/* HOME PAGE */
+.icon {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    background-image: url(imgs/face.jpg);
+    background-size: contain;
+    float:left;
+    margin-right:15px;
+}
+.site-title {
+  float:left;
+  font-family: utopia-std-display, serif;
+  font-weight: 700;
+  font-style: normal;
+  transition:.3s;
+}
+.site-title:hover {
+    color:#60378f;
+}
+.clear {
+    clear: both;
+}
+nav {
+	margin:0;
+	padding:0;
+  float:right;
+  font-family: hero-new, sans-serif;
+  font-weight:200;
+}
+nav li {
+	display:inline;
+	padding:0;
+	margin:0;
+  margin-left: 30px;
+}
+li a {
+  text-decoration:none;
+  color:black;
+  transition:.3s;
+}
+li a:hover {
+  color:#60378f;
+}
+li a.selected {
+  color:#60378f;
+  font-weight:700;
+}
+h2 {
+  font-family: hero-new, sans-serif;
+  font-weight: 700;
+}
+.highlight {
+  font-family: utopia-std-display, serif;
+  font-weight: 700;
+  color:#60378f;
+  color: #60378f;
+  text-decoration: underline;
+  text-decoration-color: currentcolor;
+  text-decoration-color: #cdaf6e;
+  font-size:1.15em;
+}
+.welcome {
+  font-size: 1.25em;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.image-caption {
+  font-family: hero-new, sans-serif;
+  font-weight: 700;
+  text-transform:uppercase;
+  font-size:.75em;
+  color: #60378f;
+  margin-top:5px;
+  float:left;
+}
+.image-box {
+    width: 100%;
+    height: 50vh;
+    background-image: url('imgs/random_imgs/image_4-min.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.footer {
+    font-size: 3em;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top:75px;
+}
+.icons {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: #60378f;
+}
+
+::selection {
+  color: white;
+  background: #60378f;
+}
+.fab {
+  transition: .3s;
+}
+.fab.fa-github:hover {
+    color: #6e5494;
+}
+.fab.fa-linkedin-in:hover {
+    color: #0077b5;
+}
+.random-button {
+    background: none;
+    border: none;
+    font-family: Hero-New,sans-serif;
+    color: white;
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: .75em;
+    background-color: #cdaf6e;
+    transition:.2s;
+}
+.random-button:hover {
+   background-color: #a7843a;
+}
+.random-button:active {
+   background-color: #60378f;
+}
+.pic_change {
+    float: right;
+    margin-top: 5px;
+}
+
+/* RESPONSIVENESS */
+@media only screen and (min-width: 320px) and (max-width: 768px){
+  body {
+      padding: 15px 20px 35px 20px;
+  }
+  nav {
+    margin-top:12px;
+  }
+  .welcome {
+    font-size: 20px;
+  }
+  .footer {
+    margin-top:75px;
+  }
+}
+
+/* @media only screen and (min-width: 480px) and (max-width: 767px){ ... }
+
+@media only screen and (min-width: 768px) and (max-width: 991px){ ... }
+
+@media only screen and (min-width: 992px) and (max-width: 1999px){ ... } */
