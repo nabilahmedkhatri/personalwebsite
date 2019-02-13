@@ -156,9 +156,6 @@ h2 {
   .welcome {
     font-size: 20px;
   }
-  .footer {
-    margin-top:75px;
-  }
   .logo {
     width: 175px;
     height: 75px;
@@ -166,13 +163,18 @@ h2 {
     margin-left: auto;
     margin-right: auto;
   }
+}
+@media only screen and (max-width: 767px) {
   .image-caption {
     float:none;
   }
   .pic_change {
     float:none;
     text-align:center;
-    margin-top:15px;
+    margin-top:25px;
+  }
+  .footer {
+    margin-top:35px;
   }
 }
 
@@ -185,9 +187,6 @@ h2 {
   }
   .welcome {
     font-size: 20px;
-  }
-  .footer {
-    margin-top:35px;
   }
 }
 
